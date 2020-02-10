@@ -1,5 +1,5 @@
 
-Glasswall Redact
+# Glasswall Redact
 
 Obfuscate sensitive data from your incoming or outgoing documents
 
@@ -13,12 +13,12 @@ Any time you need to redact words, phrases or patterns of text in a document. Gl
 
 Glasswall Redact can search, find and replace words, phrases and patterns like email addresses, phone numbers and ID numbers quickly and easily at high volumes.
 
-We eat our own dog food!
+##### We eat our own dog food!
 "At Glasswall we use Glasswall Redact ourselves because some customers just want that extra level of privacy concerning their internal security arrangements"
 
 To get going buy credits from our store, send us your files and what you'd like removed. We'll do the rest. We'll have a dedicated customer support channel on Slack where you can reach us for any questions, comments or concerns.
 
-What our customers say:
+##### What our customers say:
 "We used to redact words and phrases from documents manually. As a law firm, we handle an extremely high volume of documents and Glasswall Redact has really saved the laborious manual and often error prone task of doing the redaction process by hand"
 
 Glasswall Redact could help you in many ways, or perhaps you have a unique application for it. 
