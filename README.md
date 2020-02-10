@@ -5,8 +5,6 @@ Obfuscate sensitive data from your incoming or outgoing documents
 
 By accurately and automatically obfuscating unwanted or sensitive data from documents Glasswall Redact ensures data confidentiality for you and your customers
 
-Glasswall Redact could solve a number of problems for you:
-
 Are you an organisation that takes it's customer data seriously? A GDPR request could mean you must remove all trace of a customer from the data you hold. Including documents. Glasswall Redact can help.
 
 Do you handle sensitive data or have top secret clients who should not be mentioned in press releases or documents being distributed outside your organisation? Glasswall Redact can help.
