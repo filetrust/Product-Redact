@@ -1,0 +1,38 @@
+    openapi: 3.0.0
+    info:
+      title: File Type Detection API
+      description: Detects the real file type of a file.
+      version: 0.1.9
+    servers:
+      - url: https://glasswallredact.azurewebsites.net
+        description: Azure
+    paths:
+      /api/RedactFile:
+        post:
+          summary: Returns a file type for the given file.
+          description: Returns the file type detected by the Glasswall Engine.
+          parameters:
+            - in: header
+              name: x-api-key
+              schema:
+                type: string
+              required: true
+          requestBody:
+            content:
+              "multipart/form-data":
+                schema:
+                  required:
+                     file
+                  type: object
+                  properties:
+                    file:
+                      type: string
+                      format: binary
+                encoding:
+                  file:
+                    style: form
+          responses:
+            '200':    # status code
+              description: Success
+            '400':
+              description: Bad Request
