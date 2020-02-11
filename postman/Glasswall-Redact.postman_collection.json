@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "b666e9dd-a91a-4601-892a-faf20c5056f9",
+		"name": "Glasswall-Redact",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RedactFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "RedactJson",
+							"value": "[\n{\n\t\"value\": \"banana\",\n\t\"replace_with\": \"#\"\n},\n{\n\t\"value\": \"apple\",\n\t\"replace_with\": \"-\"\n},\n]\n\n\n",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "me email",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://glasswallredact.azurewebsites.net/api/RedactFile",
+					"protocol": "https",
+					"host": [
+						"glasswallredact",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"RedactFile"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
