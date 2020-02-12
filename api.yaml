@@ -1,38 +1,43 @@
-    openapi: 3.0.0
-    info:
-      title: File Type Detection API
-      description: Detects the real file type of a file.
-      version: 0.1.9
-    servers:
-      - url: https://glasswallredact.azurewebsites.net
-        description: Azure
-    paths:
-      /api/RedactFile:
-        post:
-          summary: Returns a file type for the given file.
-          description: Returns the file type detected by the Glasswall Engine.
-          parameters:
-            - in: header
-              name: x-api-key
-              schema:
-                type: string
-              required: true
-          requestBody:
-            content:
-              "multipart/form-data":
-                schema:
-                  required:
-                     file
-                  type: object
-                  properties:
-                    file:
-                      type: string
-                      format: binary
-                encoding:
-                  file:
-                    style: form
-          responses:
-            '200':    # status code
-              description: Success
-            '400':
-              description: Bad Request
+openapi: 3.0.0
+info:
+  title: Word Redaction API
+  description: Mask sensitive content within your documents
+  version: 0.1.9
+servers:
+  - url: https://glasswallredact.azurewebsites.net
+    description: Azure
+paths:
+  /api/RedactFile:
+    post:
+      summary: Returns a document with redactions.
+      description: Returns a document with sensitive content redacted with the chosen character.
+      parameters:
+        - name: x-api-key
+          in: header
+          description: "API Key purchased from https://glasswall-store.com/"
+          schema:
+            type: string
+          required: true
+        - name: "RedactJson"
+          in: "form"
+          description: "Redact settings JSON"
+          required: true
+          type: "string"
+      requestBody:
+        content:
+          "multipart/form-data":
+            schema:
+              required: file
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+            encoding:
+              file:
+                style: form
+      responses:
+        "200": # status code
+          description: Success
+        "400":
+          description: Bad Request

@@ -19,7 +19,7 @@ namespace Glasswall.Redact.Api
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            if (req.Form.Files.Count <= 1)
+            if (req.Form.Files.Count < 1)
                 return new BadRequestObjectResult("You must specify a file and an xml");
             
             var fileArg = req.Form.Files[0];
