@@ -1,2 +1,5 @@
 
 azurefuncs/Properties/PublishProfiles/GlasswallRedact - Zip Deploy.pubxml
+Glasswall.Redact.Api.Tests/bin/Debug/netcoreapp2.2/Glasswall.Redact.Api.dll
+Glasswall.Redact.Api.Tests/bin/Debug/netcoreapp2.2/Glasswall.Redact.Api.pdb
+Glasswall.Redact.Api.Tests/bin/Debug/netcoreapp2.2/Glasswall.Redact.Api.Tests.deps.json
