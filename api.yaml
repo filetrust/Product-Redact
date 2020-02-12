@@ -18,21 +18,18 @@ paths:
           schema:
             type: string
           required: true
-        - name: "RedactJson"
-          in: "form"
-          description: "Redact settings JSON"
-          required: true
-          type: "string"
       requestBody:
         content:
           "multipart/form-data":
             schema:
-              required: file
+              required: file, redactJson
               type: object
               properties:
                 file:
                   type: string
                   format: binary
+                redactJson:
+                  type: string
             encoding:
               file:
                 style: form
