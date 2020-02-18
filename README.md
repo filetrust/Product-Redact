@@ -10,6 +10,6 @@ Glasswall Redact can accurately and automatically remove unwanted or sensitive d
 # How it works
 Purchase your license key from the store here.  Define the strings and regular expressions you want to target for redaction.  Submit your files along with the redaction actions list and Glasswall wil lreturn the redacted files to you.  
 
-Store: https://glasswall-store.com/
+Purchase from the [Glasswall Store](https://glasswall-store.com/)
 
 Blogs: [coming soon]
