@@ -1,4 +1,4 @@
-Obfuscate sensitive data from your documents
+### Obfuscate sensitive data from your documents
 
 # The problem
 
